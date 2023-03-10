@@ -1,0 +1,42 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-width: 375px;
+  min-height: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: black;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    padding: 0 20px;
+  }
+}
